@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		56CE3CFC1F956645006E8F46 /* CKNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CE3CFA1F956645006E8F46 /* CKNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CE3D031F956700006E8F46 /* CKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE3D021F956700006E8F46 /* CKNavigationController.swift */; };
+		56CE3D051F956737006E8F46 /* CKNavigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE3D041F956737006E8F46 /* CKNavigatable.swift */; };
+		56CE3D071F956761006E8F46 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE3D061F956761006E8F46 /* Stack.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56CE3D261F9569A1006E8F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56CE3D221F9569A0006E8F46 /* CKNavigationExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56CE3D111F9569A0006E8F46;
+			remoteInfo = CKNavigationExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		56CE3CF71F956645006E8F46 /* CKNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CKNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CE3CFA1F956645006E8F46 /* CKNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNavigation.h; sourceTree = "<group>"; };
 		56CE3CFB1F956645006E8F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CE3D021F956700006E8F46 /* CKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKNavigationController.swift; sourceTree = "<group>"; };
+		56CE3D041F956737006E8F46 /* CKNavigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKNavigatable.swift; sourceTree = "<group>"; };
+		56CE3D061F956761006E8F46 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		56CE3D221F9569A0006E8F46 /* CKNavigationExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CKNavigationExample.xcodeproj; path = CKNavigationExample/CKNavigationExample.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +47,7 @@
 		56CE3CED1F956645006E8F46 = {
 			isa = PBXGroup;
 			children = (
+				56CE3D221F9569A0006E8F46 /* CKNavigationExample.xcodeproj */,
 				56CE3CF91F956645006E8F46 /* CKNavigation */,
 				56CE3CF81F956645006E8F46 /* Products */,
 			);
@@ -46,10 +64,21 @@
 		56CE3CF91F956645006E8F46 /* CKNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				56CE3D021F956700006E8F46 /* CKNavigationController.swift */,
+				56CE3D041F956737006E8F46 /* CKNavigatable.swift */,
+				56CE3D061F956761006E8F46 /* Stack.swift */,
 				56CE3CFA1F956645006E8F46 /* CKNavigation.h */,
 				56CE3CFB1F956645006E8F46 /* Info.plist */,
 			);
 			path = CKNavigation;
+			sourceTree = "<group>";
+		};
+		56CE3D231F9569A0006E8F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56CE3D271F9569A1006E8F46 /* CKNavigationExample.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +124,7 @@
 				TargetAttributes = {
 					56CE3CF61F956645006E8F46 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -109,12 +139,28 @@
 			mainGroup = 56CE3CED1F956645006E8F46;
 			productRefGroup = 56CE3CF81F956645006E8F46 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 56CE3D231F9569A0006E8F46 /* Products */;
+					ProjectRef = 56CE3D221F9569A0006E8F46 /* CKNavigationExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				56CE3CF61F956645006E8F46 /* CKNavigation */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		56CE3D271F9569A1006E8F46 /* CKNavigationExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CKNavigationExample.app;
+			remoteRef = 56CE3D261F9569A1006E8F46 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		56CE3CF51F956645006E8F46 /* Resources */ = {
@@ -131,6 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CE3D051F956737006E8F46 /* CKNavigatable.swift in Sources */,
+				56CE3D071F956761006E8F46 /* Stack.swift in Sources */,
+				56CE3D031F956700006E8F46 /* CKNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +301,12 @@
 		56CE3D001F956645006E8F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U4T3RQVCBL;
+				DEVELOPMENT_TEAM = 92E3TM2LT5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -264,9 +314,11 @@
 				INFOPLIST_FILE = CKNavigation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.charleskenney.CKNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -274,11 +326,12 @@
 		56CE3D011F956645006E8F46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U4T3RQVCBL;
+				DEVELOPMENT_TEAM = 92E3TM2LT5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -286,6 +339,7 @@
 				INFOPLIST_FILE = CKNavigation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.charleskenney.CKNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
