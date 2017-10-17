@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                = "CKNavigation"
-  s.version             = "0.1.0"
+  s.version             = "0.1.1"
   s.summary             = "A UINavigationController port for Cocoa Development."
 
   s.homepage            = "https://github.com/Charliekenney23"
@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/charliekenney23/ck-navigation.git", :tag => s.version }
   s.source_files        = [
-    'Sources/*.swift'
+    'Sources/*.swift',
+    'Sources/*.h'
   ]
 
 end
