@@ -12,7 +12,7 @@ import CKNavigation
 
 class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     
-    var navigationController = CKNavigationController()
+    var navigationController: CKNavigationController!
     
     let controller = ViewController()
     
@@ -40,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         window.delegate = self
         // init navigation controller
-        navigationController.setRootViewController(controller)
+        navigationController = CKNavigationController(rootViewController: controller)
         window.contentView?.addSubview(navigationController.view)
         navigationController.view.frame = NSRect(x: 0, y: 0, width: window.frame.size.width, height: window.frame.size.height)
         navigationController.view.wantsLayer = true

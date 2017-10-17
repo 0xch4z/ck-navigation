@@ -12,15 +12,14 @@
   The <code>CKNavigationController</code> is meant to provide navigation in a single <code>NSWindow</code> similar to that of UIKit's <code>UINavigationController</code> on iOS. This is a great solution for seperating views in low profile status bar apps and the like.
 </p>
 <p>
-  Implementing a <code>CKNavigationController</code> is almost exactly like <code>UINavigationController</code>. Simply create an instance instance and call <code>.setRootViewController</code> with the controller you'd like to set as root.
+  Implementing a <code>CKNavigationController</code> is exactly like <code>UINavigationController</code> in iOS. Simply call the initializer and pass in the controller you'd like to set as root. Note: in order to add a view controller to a navigation controller, the view controller must conform to the <a href="Sources/Navigatable.swift"><code>CKNavigatable</code> protocol</a>
 </p>
 
 ```swift
 import CKNavigation
 
 let myController = MyViewController()
-let myNavigationController = CKNavigationController()
-myNavigationController.setRootViewController(myController)
+let myNavigationController = CKNavigationController(rootViewController: myController)
 ```
 
 <p>
@@ -44,14 +43,35 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // add view controller to navigation controller
-        navigationController.setRootViewController(controller)
+        // initialize navigation controller with root view
+        navigationController = CKNavigationController(rootViewController: controller)
         // add navigation controller to the window
         window.contentView?.addSubview(navigationController.view)
         navigationController.view.wantsLayer = true
         window.makeKeyAndOrderFront(nil)
     }
 }
+```
+
+<p>
+  Pushing a view controller to the stack is done easily, too. From inside the `myViewController` class:
+</p>
+
+```swift
+    @objc func handleNextButtonPress(_ sender: Any?) {
+          let newController = AnotherViewController()
+          self.navigationController!.pushViewController(newController)
+    }
+```
+
+<p>
+  Similarly, to pop a view controller from the stack:
+</p>
+
+```swift
+    @objc func handlePreviousButtonPress(_ sender) {
+          self.navigationController!.popViewController()
+    }
 ```
 
 <h2>Example</h2>

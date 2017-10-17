@@ -161,6 +161,11 @@ open class CKNavigationController: NSViewController, NSWindowDelegate {
         ptr.setNavigationController(to: self)
     }
     
+    public convenience init(rootViewController controller: NavigatableViewController) {
+        self.init()
+        setRootViewController(controller)
+    }
+    
     /**
      A helper method for setting the root view controller
      - parameters:
