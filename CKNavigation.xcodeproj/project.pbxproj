@@ -48,7 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				56CE3D221F9569A0006E8F46 /* CKNavigationExample.xcodeproj */,
-				56CE3CF91F956645006E8F46 /* CKNavigation */,
+				56CE3CF91F956645006E8F46 /* Sources */,
 				56CE3CF81F956645006E8F46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56CE3CF91F956645006E8F46 /* CKNavigation */ = {
+		56CE3CF91F956645006E8F46 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				56CE3D021F956700006E8F46 /* CKNavigationController.swift */,
@@ -70,7 +70,7 @@
 				56CE3CFA1F956645006E8F46 /* CKNavigation.h */,
 				56CE3CFB1F956645006E8F46 /* Info.plist */,
 			);
-			path = CKNavigation;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		56CE3D231F9569A0006E8F46 /* Products */ = {

@@ -55,7 +55,7 @@
 		56CE3D081F9569A0006E8F46 = {
 			isa = PBXGroup;
 			children = (
-				56CE3D131F9569A0006E8F46 /* CKNavigationExample */,
+				56CE3D131F9569A0006E8F46 /* Example */,
 				56CE3D121F9569A0006E8F46 /* Products */,
 				56CE3D281F9569B6006E8F46 /* Frameworks */,
 			);
@@ -69,7 +69,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56CE3D131F9569A0006E8F46 /* CKNavigationExample */ = {
+		56CE3D131F9569A0006E8F46 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				56CE3D141F9569A0006E8F46 /* AppDelegate.swift */,
@@ -79,7 +79,7 @@
 				56CE3D2D1F9569F6006E8F46 /* ViewController.swift */,
 				56CE3D2F1F956A03006E8F46 /* SecondViewController.swift */,
 			);
-			path = CKNavigationExample;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		56CE3D281F9569B6006E8F46 /* Frameworks */ = {
