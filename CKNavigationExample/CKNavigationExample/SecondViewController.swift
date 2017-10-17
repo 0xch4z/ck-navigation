@@ -10,10 +10,8 @@ import Foundation
 import Cocoa
 import CKNavigation
 
-class SecondViewController: NSViewController, CKNavigatable {
-    
-    var navigationController: CKNavigationController?
-    
+class SecondViewController: CKNavigatableViewController {
+        
     let label: NSTextField = {
         let label = NSTextField(string: "Second Controller")
         label.drawsBackground = false

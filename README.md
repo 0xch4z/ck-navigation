@@ -12,7 +12,7 @@
   The <code>CKNavigationController</code> is meant to provide navigation in a single <code>NSWindow</code> similar to that of UIKit's <code>UINavigationController</code> on iOS. This is a great solution for seperating views in low profile status bar apps and the like.
 </p>
 <p>
-  Implementing a <code>CKNavigationController</code> is exactly like <code>UINavigationController</code> in iOS. Simply call the initializer and pass in the controller you'd like to set as root. Note: in order to add a view controller to a navigation controller, the view controller must conform to the <a href="Sources/Navigatable.swift"><code>CKNavigatable</code> protocol</a>
+  Implementing a <code>CKNavigationController</code> is exactly like <code>UINavigationController</code> in iOS. Simply call the initializer and pass in the controller you'd like to set as root. Note: in order to add a view controller to a navigation controller, the view controller must subclass <a href="Sources/CKNavigatableViewController.swift"><code>CKNavigatableViewController</code> or explicitly conform to the <a href="Sources/CKNavigatable.swift"><code>CKNavigatable</code> protocol</a>.
 </p>
 
 ```swift
@@ -27,6 +27,7 @@ let myNavigationController = CKNavigationController(rootViewController: myContro
 </p>
 
 ```swift
+import Foundation
 import Cocoa
 import CKNavigation
 
@@ -54,7 +55,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 ```
 
 <p>
-  Pushing a view controller to the stack is done easily, too. From inside the `myViewController` class:
+  Pushing a view controller to the stack is done easily, too. From inside the <code>myViewController</code> class:
 </p>
 
 ```swift
@@ -69,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 </p>
 
 ```swift
-    @objc func handlePreviousButtonPress(_ sender) {
+    @objc func handlePreviousButtonPress(_ sender: Any?) {
           self.navigationController!.popViewController()
     }
 ```

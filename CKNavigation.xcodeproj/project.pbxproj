@@ -11,6 +11,7 @@
 		56CE3D031F956700006E8F46 /* CKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE3D021F956700006E8F46 /* CKNavigationController.swift */; };
 		56CE3D051F956737006E8F46 /* CKNavigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE3D041F956737006E8F46 /* CKNavigatable.swift */; };
 		56CE3D071F956761006E8F46 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE3D061F956761006E8F46 /* Stack.swift */; };
+		56F6B23A1F959F0D0027EC15 /* CKNavigatableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6B2391F959F0D0027EC15 /* CKNavigatableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		56CE3D041F956737006E8F46 /* CKNavigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKNavigatable.swift; sourceTree = "<group>"; };
 		56CE3D061F956761006E8F46 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		56CE3D221F9569A0006E8F46 /* CKNavigationExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CKNavigationExample.xcodeproj; path = CKNavigationExample/CKNavigationExample.xcodeproj; sourceTree = "<group>"; };
+		56F6B2391F959F0D0027EC15 /* CKNavigatableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKNavigatableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				56CE3D021F956700006E8F46 /* CKNavigationController.swift */,
+				56F6B2391F959F0D0027EC15 /* CKNavigatableViewController.swift */,
 				56CE3D041F956737006E8F46 /* CKNavigatable.swift */,
 				56CE3D061F956761006E8F46 /* Stack.swift */,
 				56CE3CFA1F956645006E8F46 /* CKNavigation.h */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56CE3D051F956737006E8F46 /* CKNavigatable.swift in Sources */,
+				56F6B23A1F959F0D0027EC15 /* CKNavigatableViewController.swift in Sources */,
 				56CE3D071F956761006E8F46 /* Stack.swift in Sources */,
 				56CE3D031F956700006E8F46 /* CKNavigationController.swift in Sources */,
 			);
