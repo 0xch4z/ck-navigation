@@ -20,6 +20,7 @@ class ViewController: NSViewController, CKNavigatable {
         label.isBordered = false
         label.alignment = .center
         label.font = NSFont(name: "Helvetica Neue Thin", size: 30)
+        label.textColor = .white
         label.isEditable = false
         label.isSelectable = false
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +46,8 @@ class ViewController: NSViewController, CKNavigatable {
         addViews()
         setupLabel()
         setupButton()
+        self.view.wantsLayer = true
+        self.view.layer!.backgroundColor = NSColor(red:52/255.0, green:152/255.0, blue:240/255.0, alpha: 1).cgColor
     }
     
     func addViews() {

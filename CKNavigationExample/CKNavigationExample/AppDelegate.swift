@@ -28,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
                               defer: false)
         // style window
         window.styleMask = [.titled, .resizable, .closable, .miniaturizable]
-        window.title = "Main Window"
+        window.title = "CKNavigation Demo"
         window.isMovableByWindowBackground = true
         window.titlebarAppearsTransparent = true
         window.appearance = NSAppearance(named: .vibrantLight)
