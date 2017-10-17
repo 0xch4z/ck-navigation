@@ -7,6 +7,20 @@
   <img src="CKNavigationExample/Assets/demo.gif">
 </p>
 
+<h2>Including CKNavigation</h2>
+<p>
+  To integrate CKNavigation into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:
+</p>
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :osx, '10.12'
+
+target 'TargetName' do
+  pod 'CKNavigation', '~> 0.1.1'
+end
+```
+
 <h2>Usage</h2>
 <p>
   The <code>CKNavigationController</code> is meant to provide navigation in a single <code>NSWindow</code> similar to that of UIKit's <code>UINavigationController</code> on iOS. This is a great solution for seperating views in low profile status bar apps and the like.
