@@ -21,7 +21,7 @@ public typealias NavigatableViewController = NSViewController & CKNavigatable
 /**
  Type for `Stack` of `NavigatableViewController`s
  */
-public typealias NavigatableViewControllerStack = Stack<NavigatableViewController>
+internal typealias NavigatableViewControllerStack = Stack<NavigatableViewController>
 
 
 /**

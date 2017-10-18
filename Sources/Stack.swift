@@ -10,7 +10,7 @@ import Foundation
 
 
 // MARK: - Stack Helper
-public struct Stack<T> {
+internal struct Stack<T> {
     fileprivate var array = [T]()
     
     public var isEmpty: Bool {
